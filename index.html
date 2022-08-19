@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="globalstyle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dcc0def279.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <nav>
+                    <div class="nav-icon" onclick="navshow()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="currentColor"   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </div>
+                    <div class="nav-overlay" onclick="navclose()" id="nav-overlay"></div>
+                    <ul class="nav-list" id="nav-list">
+                        <div class="nav-close" onclick="navclose()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+                        <div class="nav-list-wrapper">
+                            <li onmouseenter="menuitem('home')" onmouseleave="menuitemleave()">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li onmouseenter="menuitem('services')" onmouseleave="menuitemleave()">
+                                <a href="#" class="nav-link">Services</a>
+                            </li>
+                            <li onmouseenter="menuitem('about')" onmouseleave="menuitemleave()">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li onmouseenter="menuitem('projects')" onmouseleave="menuitemleave()">
+                                <a href="#" class="nav-link">Projects</a>
+                            </li>
+                            <li onmouseenter="menuitem('contact')" onmouseleave="menuitemleave()">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                            <li onmouseenter="menuitem('testimonio')" onmouseleave="menuitemleave()">
+                                <a href="#" class="nav-link">Testimonio</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section id="menu-wrapper" style="margin-top: -110px;">
+        <h2 class="menu-wrapper-header" id="menu-item-wrapper" data-aos="fade-down" data-aos-duration="1000">aaaa</h2>
+    </section>
+    <section id="hero" style="margin-top: -270px;">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hreo-right">
+                    <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="images/IMG_20210712_012926_447.jpg">
+                    </div>
+                </div>
+                <div class="hreo-left">
+                    <h3 class="hero-title">I'm Amir</h3>
+                    <div class="job"><span>Junior Front-End</span></div>
+                    <div class="developer"><span>Developer</span></div>
+                    <h3 class="hero-desc">
+                        LOREM IPSUM
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </h3>
+                    <div class="buttons">
+                        <button type="button" class="btn primary-btn">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2 class="services-header" data-outline="services">Services</h2>
+            <div class="services-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <div class="services-item">
+                    <div class="services-item-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                    </div>
+                    <div class="services-item-info">
+                        <h2 class="services-item-header">Web Design</h2>
+                        <p class="services-item-desc">
+                            LOREM IPSUM
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                        </p>
+                        <h2 class="services-show" onclick="servicesshow()">Show More</h2>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="services-item-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                    </div>
+                    <div class="services-item-info">
+                        <h2 class="services-item-header">Web Design</h2>
+                        <p class="services-item-desc">
+                            LOREM IPSUM
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                        </p>
+                        <h2 class="services-show" onclick="servicesshow()">Show More</h2>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="services-item-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                    </div>
+                    <div class="services-item-info">
+                        <h2 class="services-item-header">Web Design</h2>
+                        <p class="services-item-desc">
+                            LOREM IPSUM
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                        </p>
+                        <h2 class="services-show" onclick="servicesshow()">Show More</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="about-item-show">
+            <div class="container">
+                <div class="cancel-about" style="margin-top: -100px;" onclick="servicesclose()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </div>    
+                <div class="about-item-show-wrapper" style="margin-top: 130px;">
+                    <div class="about-item-show-image">
+                        <img src="images/pexels-flo-dahm-699459.jpg">
+                    </div>
+                    <div class="about-item-show-info">
+                        <h2 class="about-item-show-header">
+                            Front-End Developer
+                        </h2>
+                        <div class="about-item-show-desc container">
+                            <h2 class="about-item-show-item"><span>HTML</span><br>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</h2>
+                            <h2 class="about-item-show-item"><span>CSS</span><br>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</h2>
+                            <h2 class="about-item-show-item"><span>JAVASCRIPT</span><br>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</h2>
+                            <h2 class="about-item-show-item"><span>BOOTSTRAP</span><br>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </section>
+    <section id="about-item-show">
+        <div class="contaier">
+            <div class="about-item-show-wrapper">
+                <div class="about-item-show-image">
+                    <img src="images/pexels-flo-dahm-699459.jpg">
+                </div>
+                <div class="about-item-show-info">
+                    <h2 class="about-item-show-header">
+                        Front-End Developer
+                    </h2>
+                    <div class="about-item-show-desc container">
+                        <h2 class="about-item-show-item"><span>HTML</span><br>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</h2>
+                        <h2 class="about-item-show-item"><span>CSS</span><br>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</h2>
+                        <h2 class="about-item-show-item"><span>JAVASCRIPT</span><br>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</h2>
+                        <h2 class="about-item-show-item"><span>BOOTSTRAP</span><br>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testmonio">
+        <div class="container">
+            <h2 class="services-header" data-outline="testimonial">testimonial</h2>
+            <div class="testmonio-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <div class="testmonio-item">
+                    <div class="testmonio-item-image">
+                        <img src="images/pexels-italo-melo-2379004.jpg">
+                    </div>
+                    <div class="testmonio-item-info">
+                        <h2 class="testmonio-item-header">
+                            Amirhosein
+                        </h2>
+                        <h2 class="testmonio-item-secheader">
+                            Iran,Qazvin
+                        </h2>
+                        <div class="testmonio-item-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                              </svg>
+                        </div>
+                        <h2 class="testmonio-item-desc">
+                            LOREM IPSUM
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                        </h2>
+                    </div>
+                </div>
+                <div class="testmonio-item">
+                    <div class="testmonio-item-image">
+                        <img src="images/pexels-italo-melo-2379004.jpg">
+                    </div>
+                    <div class="testmonio-item-info">
+                        <h2 class="testmonio-item-header">
+                            Amirhosein
+                        </h2>
+                        <h2 class="testmonio-item-secheader">
+                            Iran,Qazvin
+                        </h2>
+                        <div class="testmonio-item-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                              </svg>
+                        </div>
+                        <h2 class="testmonio-item-desc">
+                            LOREM IPSUM
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                        </h2>
+                    </div>
+                </div>
+                <div class="testmonio-item">
+                    <div class="testmonio-item-image">
+                        <img src="images/pexels-italo-melo-2379004.jpg">
+                    </div>
+                    <div class="testmonio-item-info">
+                        <h2 class="testmonio-item-header">
+                            Amirhosein
+                        </h2>
+                        <h2 class="testmonio-item-secheader">
+                            Iran,Qazvin
+                        </h2>
+                        <div class="testmonio-item-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                              </svg>
+                        </div>
+                        <h2 class="testmonio-item-desc">
+                            LOREM IPSUM
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="stats" style="margin-top: -70px;">
+        <div class="container">
+            <h2 class="services-header" data-outline="stats">stats</h2>
+            <div class="stats-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <div class="stats-item">
+                    <h2 class="stats-item-header">+50</h2>
+                    <h2 class="stats-item-secheader">Project Done</h2>
+                    <h2 class="stats-item-desc">LOREM IPSUM
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </h2>
+                </div>
+                <div class="stats-item">
+                    <h2 class="stats-item-header">+50</h2>
+                    <h2 class="stats-item-secheader">Project Done</h2>
+                    <h2 class="stats-item-desc">LOREM IPSUM
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </h2>
+                </div>
+                <div class="stats-item">
+                    <h2 class="stats-item-header">+50</h2>
+                    <h2 class="stats-item-secheader">Project Done</h2>
+                    <h2 class="stats-item-desc">LOREM IPSUM
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2 class="services-header" data-outline="about">about</h2>
+            <div class="about-wrapper">
+                <div class="about-left" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-left-image">
+                        <img src="images/20210729_165934.jpg">
+                    </div>
+                    <div class="about-left-info">
+                        <h2 class="about-left-desc">
+                            LOREM IPSUM
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                        </h2>
+                        <h2 class="about-left-header">
+                            Amirhosein Hosseini
+                        </h2>
+                        <h2 class="about-left-secheader">
+                            CEO Of My Com
+                        </h2>
+                    </div>
+                </div>
+                <div class="about-right" data-aos="fade-left" data-aos-duration="1000">
+                    <h2 class="about-right-header">
+                        Hi! I'm Amirhosein
+                    </h2>
+                    <h2 class="about-right-secheader">
+                        Junior Front-End Developer
+                    </h2>
+                    <h2 class="about-right-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa arcu, pellentesque at fermentum ut, tempor vel orci. Proin dolor dolor, venenatis sit amet enim sit amet, condimentum vulputate neque. Aliquam elementum, tellus quis euismod auctor, risus erat feugiat ligula, in congue tortor nunc eget purus. Donec volutpat, eros vel mollis cursus, velit lacus vestibulum turpis
+                    </h2>
+                    <div class="about-buttons">
+                        <a href="#" class="secprimary-btn" download="">Download Resume</a>
+                        <a href="#" class="primary-btn">Hire Me</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="services-header" data-outline="projects">projects</h2>
+            <div class="project-wrapper">
+                <div class="project-item" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="projects-left">
+                        <div class="projects-left-image">
+                            <img src="images/pexels-jean-van-der-meulen-1454805.jpg">
+                        </div>
+                    </div>
+                    <div class="projects-right">
+                        <h2 class="projects-right-header">
+                            Find Home Website
+                        </h2>
+                        <h2 class="projects-right-secheader">
+                            A Website For Sell Or Buy Home
+                        </h2>
+                        <h2 class="projects-right-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa arcu, pellentesque at fermentum ut, tempor vel orci. Proin dolor dolor, venenatis sit amet enim sit amet, condimentum vulputate neque. Aliquam elementum, tellus quis euismod auctor, risus erat feugiat ligula, in congue tortor nunc eget purus. Donec volutpat, eros vel mollis cursus, velit lacus vestibulum turpis
+                        </h2>
+                        <div class="projects-buttons">
+                            <a href="#" class="secprimary-btn">Know More</a>
+                            <a href="#" class="primary-btn">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="projects-left">
+                        <div class="projects-left-image">
+                            <img src="images/pexels-sides-imagery-3351927.jpg">
+                        </div>
+                    </div>
+                    <div class="projects-right">
+                        <h2 class="projects-right-header">
+                            Find Home Website
+                        </h2>
+                        <h2 class="projects-right-secheader">
+                            A Website For Sell Or Buy Home
+                        </h2>
+                        <h2 class="projects-right-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa arcu, pellentesque at fermentum ut, tempor vel orci. Proin dolor dolor, venenatis sit amet enim sit amet, condimentum vulputate neque. Aliquam elementum, tellus quis euismod auctor, risus erat feugiat ligula, in congue tortor nunc eget purus. Donec volutpat, eros vel mollis cursus, velit lacus vestibulum turpis
+                        </h2>
+                        <div class="projects-buttons">
+                            <a href="#" class="secprimary-btn">Know More</a>
+                            <a href="#" class="primary-btn">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="projects-left">
+                        <div class="projects-left-image">
+                            <img src="images/pexels-cottonbro-5474282.jpg">
+                        </div>
+                    </div>
+                    <div class="projects-right">
+                        <h2 class="projects-right-header">
+                            Find Home Website
+                        </h2>
+                        <h2 class="projects-right-secheader">
+                            A Website For Sell Or Buy Home
+                        </h2>
+                        <h2 class="projects-right-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa arcu, pellentesque at fermentum ut, tempor vel orci. Proin dolor dolor, venenatis sit amet enim sit amet, condimentum vulputate neque. Aliquam elementum, tellus quis euismod auctor, risus erat feugiat ligula, in congue tortor nunc eget purus. Donec volutpat, eros vel mollis cursus, velit lacus vestibulum turpis
+                        </h2>
+                        <div class="projects-buttons">
+                            <a href="#" class="secprimary-btn">Know More</a>
+                            <a href="#" class="primary-btn">Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-first-col">
+                    <div class="footer-first-col-image">
+                        <img src="images/20210729_165934.jpg">
+                    </div>
+                    <div class="footer-first-col-info">
+                        LOREM IPSUM
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </div>
+                </div>
+                <div class="footer-sec-col">
+                    <h2 class="footer-sec-col-header">
+                        IMPORTANT<br> LINKS
+                    </h2>
+                    <a href="#" class="footer-link">Home</a>
+                    <a href="#" class="footer-link">About</a>
+                    <a href="#" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Projects</a>
+                    <a href="#" class="footer-link">Testimonial</a>
+                </div>
+                <div class="footer-thi-col">
+                    <h2 class="footer-thi-col-header">
+                        Contact<br> Info
+                    </h2>
+                    <h2 class="footer-email">hoseinia0870@gmail.com</h2>
+                    <h2 class="footer-email">09917572104</h2>
+                    <h2 class="footer-email">Qazvin , Felestin</h2>
+                </div>
+                <div class="footer-for-col">
+                    <h2 class="footer-for-col-header">Social<br>Links</h2>
+                    <div class="links-wrapper">
+                        <a href="#" class="link-btn">TE</a>
+                        <a href="#" class="link-btn">WA</a>
+                        <a href="#" class="link-btn">LI</a>
+                        <a href="#" class="link-btn">GH</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
